@@ -16,6 +16,5 @@ def download_and_extract_zip(url, extract_path):
     zip_file.extractall(extract_path)
 
 
-if not os.path.exists(BASE_DIR):
-    os.makedirs(BASE_DIR)
+if __name__ == "__main__":
     download_and_extract_zip(URL, BASE_DIR)
